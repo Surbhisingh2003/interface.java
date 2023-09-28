@@ -1,0 +1,31 @@
+interface Switchable {
+public void on();
+public void off();
+}
+class cellphone implements Switchable {
+public void on() {
+System.out.println("Switching on cellphone :");
+}
+public void off() {
+System.out.println("Switching off cellphone");
+}
+}
+class television implements Switchable{
+public void on() {
+System.out.println("Switching on television :");
+}
+public void off() {
+System.out.println("Switching off television :");
+}
+}
+
+class interf {
+public static void main(String args[]) {
+cellphone ob=new cellphone();
+ob.on();
+ob.off();
+television obj= new television();
+obj.on();
+obj.off();
+}
+}
